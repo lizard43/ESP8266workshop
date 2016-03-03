@@ -1,6 +1,20 @@
+-----------------------------------
+
+Adafruit libraries are BSD licenses as specified in their respective folders in the library section of this repository. Please refer to them.
+
+-----------------------------------
+
+The Pahu MQTT library is not explicitely marked in the library but it falls under the [Eclipse
+Public License] (http://www.eclipse.org/org/documents/epl-v10.php)
+
+-----------------------------------
+
+All other code not otherwise marked as a different license is:
+
+
 The MIT License (MIT)
 
-Copyright (c) 2016 d
+Copyright (c) 2016
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
