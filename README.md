@@ -12,13 +12,19 @@ Provided with your workshop fee are the parts we'll be using:
 * DHT11 Temperature & Humidity Sensor
 * Micro USB data cable
 * MB-102 Solderless Breadboard with 830 tie points and 2 buses
-* 30 dupont jumper wires (10 M-M, 10 F-F, 10 M-F)
+* 30 Dupont jumper wires (10 M-M, 10 F-F, 10 M-F)
+* 3D printed NodeMCU case
+
+You will need to bring your own laptop and the ability to install software (administrator password may be required).
+
+Some software experience is recommended but we'll provide the code if needed. Experience with Arduinos (such as from our previous workshop) is also great but not essential. We can help you at each step. 
 
 We'll do the following exercises:
 * ESP8266 overview
 * Setup development environment
 * Build a Wifi client
-* Learn how to display graphics and text on OLED
+* I2C and scanning for devices
+* Display graphics and text on OLED
 * WiFi Scanner and display OLED display
 * Display temperature and humidity on OLED display
 * Create a Web server
