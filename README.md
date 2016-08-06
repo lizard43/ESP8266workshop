@@ -32,6 +32,7 @@ We'll do the following exercises:
 * Create Wifi Access Point with SSID
 
 Pre-Workshop:
+* Install the (CP2102 USB driver](https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx) for your OS. 
 * Install Arduino IDE 1.6.7 or better. [Arduino Software](https://www.arduino.cc/en/Main/Software)
 * In File -> Preferences, set "Additional Boards Manager URL" to http://arduino.esp8266.com/staging/package_esp8266com_index.json
 	+ Then install the ESP Board Package by going to Tool -> Board -> Board Manager and then install ESP at the bottom of the list

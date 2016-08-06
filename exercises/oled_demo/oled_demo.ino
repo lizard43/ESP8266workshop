@@ -20,6 +20,9 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+#include "dht.h"
+
+#define DHTPIN 5    // what pin we're connected to
 
 #define OLED_RESET -1
 Adafruit_SSD1306 display(OLED_RESET);
@@ -64,6 +67,8 @@ void setup()   {
   uint8_t i2cAddress = 0x3C;
   // SDA, SCL
   // GPIO4, GPIO5
+  // NodeMCU D2, D1
+  // So that's Display SDA -> D2 and SCL -> D1
   Wire.begin(4,5);
   i2c_scan();
   

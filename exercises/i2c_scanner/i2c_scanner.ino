@@ -2,9 +2,8 @@
 
 void setup()
 {
-  // SDA, SCL
-  // GPIO4, GPIO5
-  Wire.begin(4,5);
+  // SDA, SCL => GPIO4, GPIO5 => NodeMCU pins D2, D1
+  Wire.begin(SDA,SCL);
 
   Serial.begin(115200);
 

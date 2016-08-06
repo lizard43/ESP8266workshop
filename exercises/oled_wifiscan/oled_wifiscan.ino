@@ -30,7 +30,10 @@ void setup() {
   // of either 0x7A or 0x7B. But they are not ...
   // So do a quick i2c scan to confrim the address is what we expect
   // 
-  // On NodeMCU SDA is GPIO4, SCL is GPIO5
+  // SDA, SCL
+  // GPIO4, GPIO5
+  // NodeMCU D2, D1
+  // So that's Display SDA -> D2 and SCL -> D1
   Wire.begin(SDA,SCL);
   i2c_scan();
 

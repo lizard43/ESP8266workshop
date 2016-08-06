@@ -44,3 +44,47 @@ Projects in this repostory include:
 * I2C-Scanner : Scans the I2C in the range of 0 -127 to identify slave devices
 * ssd1306_128x64_i2c : Using the [Adafruit libraries](https://learn.adafruit.com/monochrome-oled-breakouts/arduino-library-and-examples), demonstrates graphics capabilities of the OLED display
 * ssd1306_i2c_wifiscan : Using the ESP8266 WiFi capability and the [Adafruit libraries](https://learn.adafruit.com/monochrome-oled-breakouts/arduino-library-and-examples), demonstrates scanning available WiFi Access Points and displaying their details on the OLED. 
+
+![NodeMCU](/images/NODEMCU_DEVKIT_V1.0_PINMAP.png)
+
+NodeMCU has weird pin mapping.
+Pin numbers written on the board itself do not correspond to ESP8266 GPIO pin numbers. We have constants defined to make using this board easier:
+
+// Analog
+static const uint8_t A0 = 17;
+
+// Digital
+static const uint8_t D0   = 16;
+static const uint8_t D1   = 5;
+static const uint8_t D2   = 4;
+static const uint8_t D3   = 0;
+static const uint8_t D4   = 2;
+static const uint8_t D5   = 14;
+static const uint8_t D6   = 12;
+static const uint8_t D7   = 13;
+static const uint8_t D8   = 15;
+static const uint8_t D9   = 3;
+static const uint8_t D10  = 1;
+
+// On board LED
+static const uint8_t BUILTIN_LED = 16;
+
+// I2C
+//    NodeMCU pins SDA => D2, SCL => D1
+static const uint8_t SDA = 4;
+static const uint8_t SCL = 5;
+
+// SPI
+//    NodeMCU pins SS => D8, MOSI => D7, MISO => D6, SCK => D5
+static const uint8_t SS    = 15;
+static const uint8_t MOSI  = 13;
+static const uint8_t MISO  = 12;
+static const uint8_t SCK   = 14;
+
+These are defined in pins_arduino.h
+
+If you want to use NodeMCU pin 5, use D5 for pin number, and it will be translated to 'real' GPIO pin 14.
+
+
+
+D0 is shared with the onboard LED
