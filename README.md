@@ -15,7 +15,6 @@ Provided with your workshop fee are the parts we'll be using:
 * Micro USB data cable
 * MB-102 Solderless Breadboard with 830 tie points and 2 buses
 * 30 Dupont jumper wires (10 M-M, 10 F-F, 10 M-F)
-* 3D printed NodeMCU case
 
 You will need to bring your own laptop and the ability to install software (administrator password may be required).
 
