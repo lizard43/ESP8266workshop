@@ -1,5 +1,7 @@
 # ESP8266 Workshop
 
+The best way to learn technology is to make something
+
 This is the repository for the ESP8266 workshop. You'll find all files and notes needed to complete the exercises.
 
 Slides can be found on slideshare [here](http://www.slideshare.net/roadster43)
