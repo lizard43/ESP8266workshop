@@ -22,7 +22,7 @@ Some software experience is recommended but we'll provide the code if needed. Ex
 
 We'll do the following exercises:
 * ESP8266 overview
-* Setup development environment
+* 01 - Hello Blinky World
 * Build a Wifi client
 * I2C and scanning for devices
 * Display graphics and text on OLED
@@ -33,14 +33,15 @@ We'll do the following exercises:
 * Create Wifi Access Point with SSID
 
 Pre-Workshop:
+Setup your development environment. Please perform these steps PRIOR to coming to the workshop. If you have questions or problems, use the meetup forum to ask for help so that you are ready when the workshop begins.
 * Install the (CP2102 USB driver](https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx) for your OS. 
-* Install Arduino IDE 1.6.7 or better. [Arduino Software](https://www.arduino.cc/en/Main/Software)
-* In File -> Preferences, set "Additional Boards Manager URL" to http://arduino.esp8266.com/staging/package_esp8266com_index.json
-	+ Then install the ESP Board Package by going to Tool -> Board -> Board Manager and then install ESP at the bottom of the list
+* Install Arduino IDE 1.6.9 or better. [Arduino Software](https://www.arduino.cc/en/Main/Software)
+* Start the Arduino IDE. In the menu option File -> Preferences, set "Additional Boards Manager URL" to http://arduino.esp8266.com/staging/package_esp8266com_index.json
+	+ Then install the ESP Board Package by going to menu option Tool -> Board -> Board Manager and then install ESP at the bottom of the list
 	+ [Github has a good description of this install] (https://github.com/esp8266/Arduino/blob/master/README.md)
 
-* Download this [ESP8266workshop repository](https://github.com/lizard43/ESP8266workshop) either with git clone or by downloading the zip and extracting it on your PC.
-* Copy the files in the libraries folder of this repository to your libraries folder of your arduino install.
+* Download the [ESP8266workshop repository](https://github.com/lizard43/ESP8266workshop) either with git clone or by downloading the zip and extracting it on your PC.
+* Copy the folders in the setup/libraries folder of this repository to your libraries folder of your arduino install.
 
 Projects in this repostory include:
 * I2C-Scanner : Scans the I2C in the range of 0 -127 to identify slave devices
