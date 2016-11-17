@@ -27,6 +27,12 @@ Now we're ready to start Blinking!
 * Carefully insert your nodeMCU module onto your breadboard
 * Connect your PC to the nodeMCU with the micro USB cable
 * Start the Arduino IDE
+* Use the menu option File->Examples->ESP8266->Blink to open the Blink sketch
+
+![arduino-example-blink](/images/arduino-example-blink.png)
+
+Notice that the comments in the Blink sketch say "The blue LED on the ESP-01 module is connected to GPIO1". We know this is incorrect for the nodeMCU because the LED is connected to GPIO16. But all is not lost because notice that the sketch uses a constant called LED_BUILTIN. Look back above to the pins_arduino.h file and note that LED_BUILTIN has been defined to GPIO16.
+
 * Use the menu option Tools->Board to select NodeMCU 1.0 (ESP-12E Module)
 
 ![arduino-board-selection](/images/arduino-board-selection.png)
