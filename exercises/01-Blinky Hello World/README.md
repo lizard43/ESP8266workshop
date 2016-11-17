@@ -18,6 +18,19 @@ The nodeMCU has a built in LED on the module. It is connected to GPIO16 which ha
 Take a minute to locate the nodeMCU's pins_arduino.h file that defines constants to help navigate the nodeMCU's pins. Look in your home folder. The exact path may differ based on the Arduino IDE version and the ESP8266 Board Package that you've installed. Mine is located here:
 * /home/d/.arduino15/packages/esp8266/hardware/esp8266/2.3.0-rc2/variants/nodemcu/pins_aduino.h
 
-The pins_arduin.h file contents look like this:
+The pins_arduino.h file contents look like this:
 
 ![NodeMCU-pins_arduino.h](/images/nodeMCU-pins_arduino.h.png)
+
+Now we're ready to start Blinking!
+
+* Carefully insert your nodeMCU module onto your breadboard
+* Connect your PC to the nodeMCU with the micro USB cable
+* Start the Arduino IDE
+* Use the menu option Tools->Board to select NodeMCU 1.0 (ESP-12E Module)
+
+![arduino-board-selection](/images/arduino-board-selection.png)
+
+
+
+
